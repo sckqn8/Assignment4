@@ -1,0 +1,21 @@
+<div class="container" ng-controller="taskController">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <h3><span class="label label-info">Enter Source and Destination to get Weather Details and Directions</span></h3>
+            <div class="col-md-6">
+                <input type="text" class="form-control" ng-model="source" placeholder="Source" id="source"><br>
+                <input type="text" class="form-control" ng-model="destination" placeholder="Destination" id="destination"><br>
+                <a class="btn btn-info" ng-click="getInformation()">Go</a>
+            </div>
+            <div class="col-md-6">
+                Weather in {{source}} <span id="sourceWeather" class="label label-info"></span><br><br><br>
+                Weather in {{destination}} <span id="destinationWeather" class="label label-info"></span>
+            </div>
+
+        </div>
+                <div class="col-md-12">
+            <h3>Map</h3>
+                <div id="map-canvas" style="height: 400px;"></div>
+        </div>
+    </div>
+</div>
